@@ -1,0 +1,175 @@
+html,
+body * {
+  font-size: 22px;
+  font-family: Helvetica;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 24px;
+}
+
+/* Header section*/
+header {
+  height: 69px;
+  width: 100%;
+  border-bottom: seashell 1px solid;
+  display: flex;
+  position: top;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+nav a {
+  color: seashell;
+  margin-right: 10px;
+}
+/* Main Site********/
+
+/* mission section*/
+#mission {
+  background-image: url(/img/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+#mission h2,
+#mission h4 {
+  width: 99%;
+  padding: 0.5%;
+}
+
+/* Tea of the Month section*/
+#featuredTea {
+  top: 3em;
+  position: relative;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+/*Month section container*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  line-height: 1.9em;
+}
+
+/* images*/
+.figures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+figure {
+  width: 30%;
+  height: 67%;
+  margin: 1%;
+}
+
+figure img {
+  width: 300px;
+  height: 200px;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+/*location section*/
+#locations {
+  margin: auto;
+  height: 500px;
+  width: 1200px;
+  margin-top: 10%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url("img/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.locationsH2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+.locationsH2 h2 {
+  margin-top: 5%;
+  background-color: transparent;
+}
+
+.locContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.adresses {
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.adresses h3 {
+  padding: 3% 0;
+  width: 100%;
+}
+
+.adresses p {
+  padding: 7.5% 0;
+  width: 100%;
+}
+
+/*contacts section*/
+#contacts {
+  height: 200px;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: column;
+  line-height: 3.2em;
+}
+
+/*footer*/
+footer {
+  margin-top: 20px;
+  margin-left: 380px;
+  display: block;
+  float: left;
+}
