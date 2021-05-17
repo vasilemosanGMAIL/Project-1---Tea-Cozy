@@ -1,0 +1,140 @@
+@import "variables";
+@import "reset";
+@import "flex";
+@import "images";
+
+/* Header section*/
+header {
+  height: 69px;
+  width: $mainWidth;
+  border-bottom: $mainColor 1px solid;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    height: 50px;
+    margin-left: 10px;
+  }
+  nav a {
+    color: $mainColor;
+    margin-right: 10px;
+  }
+}
+
+/* Main Site********/
+
+/* mission section*/
+#mission {
+  background-image: url("../img/img-mission-background.jpg");
+  @extend %images;
+  height: 700px;
+  width: 1200px;
+  margin: $mainMargin;
+  top: 71px;
+  @extend %flex;
+  h2,
+  h4 {
+    width: 99%;
+    padding: 0.5%;
+  }
+}
+
+/* Tea of the Month section*/
+#featuredTea {
+  top: 5em;
+  position: relative;
+  max-width: 1000px;
+  @extend %flex;
+  margin: $mainMargin;
+  /*Month section container*/
+  .container {
+    @extend %flex;
+    margin: $mainMargin;
+    line-height: 1.9em;
+  }
+  /* images*/
+  .figures {
+    @extend %flex;
+    flex-flow: row wrap;
+    figure {
+      width: 30%;
+      height: 67%;
+      margin: 1%;
+      img {
+        width: 300px;
+        height: 200px;
+      }
+      figcaption {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/*location section*/
+#locations {
+  margin: $mainMargin;
+  height: 500px;
+  width: 1200px;
+  margin-top: 10%;
+  @extend %flex;
+  background-image: url("../img/img-locations-background.jpg");
+  @extend %images;
+
+  .locationsH2 {
+    width: $mainWidth;
+    @extend %flex;
+    background-color: transparent;
+    h2 {
+      margin-top: 5%;
+      background-color: transparent;
+    }
+  }
+
+  .locContainer {
+    width: $mainWidth;
+    @extend %flex;
+    flex-flow: row;
+    background-color: transparent;
+    opacity: locationOpacity;
+    .adresses {
+      margin: $mainMargin;
+      margin-top: 15px;
+      width: 300px;
+      @extend %flex;
+      opacity: locationOpacity;
+      h3 {
+        padding: 3% 0;
+        width: $mainWidth;
+      }
+      p {
+        padding: 7.5% 0;
+        width: $mainWidth;
+      }
+    }
+  }
+}
+
+/*contacts section*/
+#contacts {
+  height: 200px;
+  margin: $mainMargin;
+  top: 2em;
+  max-width: 1200px;
+  @extend %flex;
+  line-height: 3.2em;
+}
+
+/*footer*/
+footer {
+  margin: $mainMargin;
+  width: 60%;
+  margin-top: 4%;
+  @extend %flex;
+  flex-flow: row;
+  justify-content: left;
+  p {
+    font-size: $h2FontSize - 15;
+  }
+}

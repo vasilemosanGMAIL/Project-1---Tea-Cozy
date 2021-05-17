@@ -1,7 +1,6 @@
-html,
-body * {
+* {
   font-size: 22px;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial;
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -9,14 +8,31 @@ body * {
   margin: 0;
   padding: 0;
 }
-h2 {
+
+* h2 {
   font-size: 32px;
 }
-h3 {
+
+* h3 {
   font-size: 26px;
 }
-h4 {
+
+* h4 {
   font-size: 24px;
+}
+
+#mission, #featuredTea, #featuredTea .container, #featuredTea .figures, #locations, #locations .locationsH2, #locations .locContainer, #locations .locContainer .adresses, #contacts, footer {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mission, #locations {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Header section*/
@@ -25,35 +41,31 @@ header {
   width: 100%;
   border-bottom: seashell 1px solid;
   display: flex;
-  position: top;
+  position: fixed;
   align-items: center;
   justify-content: space-between;
 }
+
 header img {
   height: 50px;
   margin-left: 10px;
 }
-nav a {
+
+header nav a {
   color: seashell;
   margin-right: 10px;
 }
-/* Main Site********/
 
+/* Main Site********/
 /* mission section*/
 #mission {
-  background-image: url(/img/img-mission-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/img-mission-background.jpg");
   height: 700px;
   width: 1200px;
   margin: auto;
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  top: 71px;
 }
+
 #mission h2,
 #mission h4 {
   width: 99%;
@@ -62,96 +74,77 @@ nav a {
 
 /* Tea of the Month section*/
 #featuredTea {
-  top: 3em;
+  top: 5em;
   position: relative;
   max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: auto;
+  /*Month section container*/
+  /* images*/
 }
-/*Month section container*/
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+#featuredTea .container {
   margin: auto;
   line-height: 1.9em;
 }
 
-/* images*/
-.figures {
-  display: flex;
+#featuredTea .figures {
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 }
-figure {
+
+#featuredTea .figures figure {
   width: 30%;
   height: 67%;
   margin: 1%;
 }
 
-figure img {
+#featuredTea .figures figure img {
   width: 300px;
   height: 200px;
 }
 
-figcaption {
+#featuredTea .figures figure figcaption {
   margin-top: 10px;
 }
+
 /*location section*/
 #locations {
   margin: auto;
   height: 500px;
   width: 1200px;
   margin-top: 10%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  background-image: url("img/img-locations-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/img-locations-background.jpg");
 }
 
-.locationsH2 {
+#locations .locationsH2 {
   width: 100%;
-  display: flex;
-  justify-content: center;
   background-color: transparent;
 }
-.locationsH2 h2 {
+
+#locations .locationsH2 h2 {
   margin-top: 5%;
   background-color: transparent;
 }
 
-.locContainer {
+#locations .locContainer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row;
   background-color: transparent;
-  opacity: 1;
+  opacity: locationOpacity;
 }
 
-.adresses {
+#locations .locContainer .adresses {
   margin: auto;
   margin-top: 15px;
-  display: flex;
   width: 300px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
+  opacity: locationOpacity;
 }
 
-.adresses h3 {
+#locations .locContainer .adresses h3 {
   padding: 3% 0;
   width: 100%;
 }
 
-.adresses p {
+#locations .locContainer .adresses p {
   padding: 7.5% 0;
   width: 100%;
 }
@@ -160,16 +153,21 @@ figcaption {
 #contacts {
   height: 200px;
   margin: auto;
+  top: 2em;
   max-width: 1200px;
-  display: flex;
-  flex-flow: column;
   line-height: 3.2em;
 }
 
 /*footer*/
 footer {
-  margin-top: 20px;
-  margin-left: 380px;
-  display: block;
-  float: left;
+  margin: auto;
+  width: 60%;
+  margin-top: 4%;
+  flex-flow: row;
+  justify-content: left;
 }
+
+footer p {
+  font-size: 17px;
+}
+/*# sourceMappingURL=style.css.map */

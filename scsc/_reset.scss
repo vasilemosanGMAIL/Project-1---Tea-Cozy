@@ -1,0 +1,19 @@
+* {
+  font-size: $mainFontSize;
+  font-family: $mainFont;
+  color: $mainColor;
+  background-color: $defaultBackgroundColor;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  h2 {
+    font-size: $h2FontSize;
+  }
+  h3 {
+    font-size: $h3FontSize;
+  }
+  h4 {
+    font-size: $h4FontSize;
+  }
+}
